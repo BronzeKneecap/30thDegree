@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Solomon's Temple — The 30th Degree</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="header-title">The <span>30th</span> Degree</div>
+  <a href="https://maps.metmuseum.org/?floor=1&lang=en-GB#17/40.779448/-73.963517/-61" target="_blank" class="map-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+    Map
+  </a>
+</header>
+<main>
+  <div class="page-label">Deeper Path · Clue</div>
+  <div class="divider"><div class="divider-line"></div><div class="divider-symbol">✦</div><div class="divider-line"></div></div>
+  <div class="section-title">Solomon's Temple</div>
+  <div class="section-subtitle">Gallery 554 · Ground Floor</div>
+  <div class="divider"><div class="divider-line"></div><div class="divider-symbol">◈</div><div class="divider-line"></div></div>
+  <div class="content">
+<img src="images/model-temple.jpg" class="content-image" alt="Model of Solomon's Temple" onerror="this.style.display='none'"><div class="image-caption">The architectural model of Solomon's Temple — Gallery 554</div>
+</div>
+  <div class="clue-section">
+  <div class="clue-label">Your Clue</div>
+  <p class="clue-text">If there are still any doubts, turn right into the next room. Covered in gold is a replica of King <span class="answer-blank"></span>'s Temple: the true holy site for these groups, located in Jerusalem.</p>
+  <div class="answer-label">Enter the answer to proceed</div>
+  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer"
+    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+  <div class="error-msg" id="errorMsg"></div>
+  <button class="submit-btn" onclick="checkAnswer(['solomon', 'Solomon'], 'p24-a')">Submit</button>
+  <div class="hint-area">
+      <button class="hint-toggle" onclick="toggleHint()">Need a hint?</button>
+      <div class="hint-box" id="hintBox"><p>Section 554.</p></div>
+    </div>
+</div>
+<a href="p23-b" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
+<script>bindEnter(['solomon', 'Solomon'], 'p24-a');</script>
+</main>
+<script src="hunt.js"></script>
+</body>
+</html>

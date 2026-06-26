@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>The Checkered Floor — The 30th Degree</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="header-title">The <span>30th</span> Degree</div>
+  <a href="https://maps.metmuseum.org/?floor=1&lang=en-GB#17/40.779448/-73.963517/-61" target="_blank" class="map-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+    Map
+  </a>
+</header>
+<main>
+  <div class="page-label">Stop 6 · Clue</div>
+  <div class="divider"><div class="divider-line"></div><div class="divider-symbol">✦</div><div class="divider-line"></div></div>
+  <div class="section-title">The Checkered Floor</div>
+  <div class="section-subtitle">American Wing · Gallery 726 · Ground Floor</div>
+  <div class="divider"><div class="divider-line"></div><div class="divider-symbol">◈</div><div class="divider-line"></div></div>
+  <div class="content">
+<img src="images/checker-floor.jpg" class="content-image" alt="Checkered floor" onerror="this.style.display='none'"><div class="image-caption">The Masonic checkered floor</div>
+</div>
+  <div class="clue-section">
+  <div class="clue-label">Your Clue</div>
+  <p class="clue-text">Not far away is a room where duality is symbolized on the floor. Think yin-yang, light-dark, good-evil, life-death. This type of floor design is the center of every Freemason lodge, once again, designed after the original Temple of Solomon in Jerusalem. On the walls in this room is a painting of a famous man who died in a famous duel. What is his last name? <span class="answer-blank"></span></p>
+  <div class="answer-label">Enter the answer to proceed</div>
+  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer"
+    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+  <div class="error-msg" id="errorMsg"></div>
+  <button class="submit-btn" onclick="checkAnswer(['hamilton', 'Hamilton'], 'p07-a')">Submit</button>
+  <div class="hint-area">
+      <button class="hint-toggle" onclick="toggleHint()">Need a hint?</button>
+      <div class="hint-box" id="hintBox"><p>You are looking for section 726.</p><button class="extra-hint-toggle" onclick="toggleExtraHint()">Extra Hint →</button><div class="extra-hint-text" id="extraHint">ALEXANDER _____.</div></div>
+    </div>
+</div>
+<a href="p06-d" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
+<script>bindEnter(['hamilton', 'Hamilton'], 'p07-a');</script>
+</main>
+<script src="hunt.js"></script>
+</body>
+</html>

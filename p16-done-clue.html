@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>The Grand Staircase — The 30th Degree</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="header-title">The <span>30th</span> Degree</div>
+  <a href="https://maps.metmuseum.org/?floor=1&lang=en-GB#17/40.779448/-73.963517/-61" target="_blank" class="map-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+    Map
+  </a>
+</header>
+<main>
+  <div class="page-label">Final Clue · The Ascent</div>
+  <div class="divider"><div class="divider-line"></div><div class="divider-symbol">✦</div><div class="divider-line"></div></div>
+  <div class="section-title">The Grand Staircase</div>
+  <div class="section-subtitle">Galleries 300–200</div>
+  <div class="divider"><div class="divider-line"></div><div class="divider-symbol">◈</div><div class="divider-line"></div></div>
+  <div class="content"></div>
+  <div class="clue-section">
+  <div class="clue-label">Your Clue</div>
+  <p class="clue-text">Exit the room and continue down the hallway until you reach the bottom of the grand staircase. Ascend the stairs to embody the ascension in knowledge you have had today. There are two sets of stairs. Each set contains <span class="answer-blank"></span> steps.</p>
+  <div class="answer-label">Enter the answer to proceed</div>
+  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer"
+    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+  <div class="error-msg" id="errorMsg"></div>
+  <button class="submit-btn" onclick="checkAnswer(['23', 'twenty three', 'twenty-three'], 'p16-done-b')">Submit</button>
+  
+</div>
+<a href="p16-done-a" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
+<script>bindEnter(['23', 'twenty three', 'twenty-three'], 'p16-done-b');</script>
+</main>
+<script src="hunt.js"></script>
+</body>
+</html>

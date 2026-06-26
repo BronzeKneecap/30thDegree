@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Navigate to the Egyptian Wing — The 30th Degree</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="header-title">The <span>30th</span> Degree</div>
+  <a href="https://maps.metmuseum.org/?floor=1&lang=en-GB#17/40.779448/-73.963517/-61" target="_blank" class="map-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+    Map
+  </a>
+</header>
+<main>
+  <div class="page-label">Stop 1 · Clue</div>
+  <div class="divider"><div class="divider-line"></div><div class="divider-symbol">✦</div><div class="divider-line"></div></div>
+  <div class="section-title">Navigate to the Egyptian Wing</div>
+  <div class="section-subtitle">Gallery 100 · Ground Floor</div>
+  <div class="divider"><div class="divider-line"></div><div class="divider-symbol">◈</div><div class="divider-line"></div></div>
+  <div class="content">
+<p>So far we have already seen two examples of numerology: <strong>3</strong> and <strong>7</strong>. Add these numbers together and multiply by 10. The resulting number is the section on your map where you will find the next clue. You will need a ticket to get inside.</p>
+<img src="images/Sphinx_with_the_third_pyramid.jpg" class="content-image" alt="Sphinx" onerror="this.style.display='none'"><div class="image-caption">The Great Sphinx of Giza</div>
+</div>
+  <div class="clue-section">
+  <div class="clue-label">Your Clue</div>
+  <p class="clue-text">Find the recumbent lion that guards this exhibit. The way he is laying resembles the same position as the Great <span class="answer-blank"></span> of Giza, in Egypt.</p>
+  <div class="answer-label">Enter the answer to proceed</div>
+  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer"
+    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+  <div class="error-msg" id="errorMsg"></div>
+  <button class="submit-btn" onclick="checkAnswer(['sphinx', 'Sphinx'], 'p03-a')">Submit</button>
+  <div class="hint-area">
+      <button class="hint-toggle" onclick="toggleHint()">Need a hint?</button>
+      <div class="hint-box" id="hintBox"><p>S P H I _ _</p></div>
+    </div>
+</div>
+<a href="p02-b" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
+<script>bindEnter(['sphinx', 'Sphinx'], 'p03-a');</script>
+</main>
+<script src="hunt.js"></script>
+</body>
+</html>

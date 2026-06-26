@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Cleopatra's Needle — The 30th Degree</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="header-title">The <span>30th</span> Degree</div>
+  <a href="https://maps.metmuseum.org/?floor=1&lang=en-GB#17/40.779448/-73.963517/-61" target="_blank" class="map-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+    Map
+  </a>
+</header>
+<main>
+  <div class="page-label">Stop 0 · Clue</div>
+  <div class="divider"><div class="divider-line"></div><div class="divider-symbol">✦</div><div class="divider-line"></div></div>
+  <div class="section-title">Cleopatra's Needle</div>
+  <div class="section-subtitle">Central Park · East Side</div>
+  <div class="divider"><div class="divider-line"></div><div class="divider-symbol">◈</div><div class="divider-line"></div></div>
+  <div class="content">
+<img src="images/3fingers.jpg" class="content-image" alt="Hold up 3 fingers" onerror="this.style.display='none'"><div class="image-caption">So that I know you solved this and have access to all the clues, look at me and hold up the number 3 on your hand.</div>
+</div>
+  <div class="clue-section">
+  <div class="clue-label">Your Clue</div>
+  <p class="clue-text">The building we will explore is open to the public. It contains art and artifacts from across the world and across time. This building is only a short walk away from where we stand. What is the 3 letter name of this building? <span class="answer-blank"></span></p>
+  <div class="answer-label">Enter the answer to proceed</div>
+  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer"
+    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+  <div class="error-msg" id="errorMsg"></div>
+  <button class="submit-btn" onclick="checkAnswer(['MET', 'met', 'Met'], 'p01-a')">Submit</button>
+  <div class="hint-area">
+      <button class="hint-toggle" onclick="toggleHint()">Need a hint?</button>
+      <div class="hint-box" id="hintBox"><p>Yes, it is a museum.</p><button class="extra-hint-toggle" onclick="toggleExtraHint()">Extra Hint →</button><div class="extra-hint-text" id="extraHint">The address is 1000 5th Ave, New York, NY 10028</div></div>
+    </div>
+</div>
+<a href="p00-c" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
+<script>bindEnter(['MET', 'met', 'Met'], 'p01-a');</script>
+</main>
+<script src="hunt.js"></script>
+</body>
+</html>

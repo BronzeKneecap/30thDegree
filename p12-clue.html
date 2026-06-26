@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Medieval Art — The 30th Degree</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="header-title">The <span>30th</span> Degree</div>
+  <a href="https://maps.metmuseum.org/?floor=1&lang=en-GB#17/40.779448/-73.963517/-61" target="_blank" class="map-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+    Map
+  </a>
+</header>
+<main>
+  <div class="page-label">Stop 12 · Clue</div>
+  <div class="divider"><div class="divider-line"></div><div class="divider-symbol">✦</div><div class="divider-line"></div></div>
+  <div class="section-title">Medieval Art</div>
+  <div class="section-subtitle">Gallery 305 · Ground Floor</div>
+  <div class="divider"><div class="divider-line"></div><div class="divider-symbol">◈</div><div class="divider-line"></div></div>
+  <div class="content"></div>
+  <div class="clue-section">
+  <div class="clue-label">Your Clue</div>
+  <p class="clue-text">On the walls of this courtyard is an artwork from the 1400s that has an overwhelming theme of trinity. The structure of the arrangement of the subjects forms a triangle. The subject matter itself captures the holy trinity, with a flying <span class="answer-blank"></span> representing the holy spirit.</p>
+  <div class="answer-label">Enter the answer to proceed</div>
+  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer"
+    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+  <div class="error-msg" id="errorMsg"></div>
+  <button class="submit-btn" onclick="checkAnswer(['dove', 'Dove'], 'p13-a')">Submit</button>
+  <div class="hint-area">
+      <button class="hint-toggle" onclick="toggleHint()">Need a hint?</button>
+      <div class="hint-box" id="hintBox"><p>The painting is on the Southern wall. It features God, Jesus, and the Virgin Mary.</p><button class="extra-hint-toggle" onclick="toggleExtraHint()">Extra Hint →</button><div class="extra-hint-text" id="extraHint">This flying animal represents purity and peace.</div></div>
+    </div>
+</div>
+<a href="p12-info" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
+<script>bindEnter(['dove', 'Dove'], 'p13-a');</script>
+</main>
+<script src="hunt.js"></script>
+</body>
+</html>
