@@ -3,15 +3,13 @@
 :root {
   --parchment: #1a1408;
   --parchment-mid: #221c0a;
-  --parchment-light: #2e2510;
   --gold: #c9a84c;
   --gold-bright: #e8c96a;
   --gold-dim: #7a6130;
-  --ink: #e8dfc0;
-  --ink-dim: #a89d7a;
-  --ink-faint: #5c5438;
+  --ink: #f0e8cc;
+  --ink-dim: #c8bc96;
+  --ink-faint: #7a7050;
   --red: #8b2020;
-  --green: #1B5E20;
   --border: #3d3218;
 }
 
@@ -25,21 +23,11 @@ body {
   overflow-x: hidden;
 }
 
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1000;
-  opacity: 0.4;
-}
-
 body::after {
   content: '';
   position: fixed;
   inset: 0;
-  background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.65) 100%);
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.55) 100%);
   pointer-events: none;
   z-index: 999;
 }
@@ -49,7 +37,7 @@ header {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 500;
-  background: linear-gradient(180deg, rgba(10,8,2,0.97) 0%, rgba(15,11,4,0.92) 100%);
+  background: rgba(10,8,2,0.97);
   border-bottom: 1px solid var(--border);
   padding: 0 16px;
   height: 50px;
@@ -60,23 +48,22 @@ header {
 
 .header-title {
   font-family: 'Cinzel', serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.18em;
   color: var(--gold);
   text-transform: uppercase;
 }
-
 .header-title span { color: var(--ink-dim); font-weight: 400; }
 
 .map-btn {
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gold-dim);
   border: 1px solid var(--gold-dim);
-  padding: 5px 10px;
+  padding: 6px 12px;
   background: transparent;
   cursor: pointer;
   text-decoration: none;
@@ -85,9 +72,8 @@ header {
   gap: 5px;
   transition: all 0.2s;
 }
-
 .map-btn:hover { color: var(--gold); border-color: var(--gold); }
-.map-btn svg { width: 10px; height: 10px; }
+.map-btn svg { width: 11px; height: 11px; }
 
 /* MAIN */
 main {
@@ -103,7 +89,7 @@ main {
 /* PAGE LABEL */
 .page-label {
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--ink-faint);
@@ -120,12 +106,12 @@ main {
   margin: 14px 0;
 }
 .divider-line { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-dim), transparent); }
-.divider-symbol { color: var(--gold-dim); font-size: 13px; flex-shrink: 0; }
+.divider-symbol { color: var(--gold-dim); font-size: 13px; }
 
 /* TITLE */
 .section-title {
   font-family: 'Cinzel', serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.07em;
   color: var(--gold);
@@ -136,7 +122,7 @@ main {
 
 .section-subtitle {
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.18em;
   color: var(--ink-faint);
   text-align: center;
@@ -151,28 +137,14 @@ main {
 }
 
 .content p {
-  font-size: 17px;
-  line-height: 1.78;
+  font-size: 19px;
+  line-height: 1.82;
   color: var(--ink);
   margin-bottom: 22px;
 }
 
-.answer-blank {
-  display: inline-block;
-  border-bottom: 2px solid var(--gold-dim);
-  min-width: 120px;
-  margin: 0 4px;
-  vertical-align: bottom;
-  height: 1.1em;
-}
-
-.clue-text .answer-blank {
-  border-bottom-color: var(--gold);
-  min-width: 140px;
-}
-
 .content p.dim {
-  font-size: 15px;
+  font-size: 17px;
   color: var(--ink-dim);
   font-style: italic;
 }
@@ -186,9 +158,8 @@ main {
   margin: 16px 0;
   background: var(--parchment-mid);
 }
-
 .quote-block p {
-  font-size: 15px !important;
+  font-size: 18px !important;
   color: var(--ink-dim) !important;
   font-style: italic;
   margin: 0 !important;
@@ -201,12 +172,12 @@ main {
   border: 1px solid var(--border);
   margin: 14px 0 4px;
   display: block;
-  filter: sepia(25%) contrast(0.9);
+  filter: sepia(20%) contrast(0.92);
 }
 
 .image-caption {
   font-family: 'Cinzel', serif;
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.12em;
   color: var(--ink-faint);
   text-align: center;
@@ -215,9 +186,7 @@ main {
 }
 
 /* CLUE SECTION */
-.clue-section {
-  padding: 20px 20px 32px;
-}
+.clue-section { padding: 20px 20px 32px; }
 
 .clue-label {
   font-family: 'Cinzel', serif;
@@ -235,8 +204,8 @@ main {
 .clue-text {
   font-family: 'Crimson Text', Georgia, serif;
   font-size: 20px;
-  line-height: 1.78;
-  color: #f0e6c0;
+  line-height: 1.82;
+  color: #f5ecd0;
   margin-bottom: 22px;
   font-style: italic;
   border-left: 3px solid var(--gold-dim);
@@ -245,10 +214,21 @@ main {
 
 .clue-text strong { color: var(--gold-bright); }
 
+/* ANSWER BLANK */
+.answer-blank {
+  display: inline-block;
+  border-bottom: 2px solid var(--gold-dim);
+  min-width: 120px;
+  margin: 0 4px;
+  vertical-align: bottom;
+  height: 1.1em;
+}
+.clue-text .answer-blank { border-bottom-color: var(--gold); min-width: 140px; }
+
 /* ANSWER INPUT */
 .answer-label {
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.18em;
   color: var(--ink-dim);
   text-transform: uppercase;
@@ -261,21 +241,19 @@ main {
   border: 1px solid var(--gold-dim);
   color: var(--gold-bright);
   font-family: 'Cinzel', serif;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   text-align: center;
-  padding: 13px 14px;
+  padding: 14px;
   outline: none;
   border-radius: 1px;
   transition: border-color 0.2s, box-shadow 0.2s;
   -webkit-appearance: none;
 }
-
-.answer-input::placeholder { color: var(--ink-faint); font-size: 11px; letter-spacing: 0.18em; }
-.answer-input:focus { border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold-dim), inset 0 0 16px rgba(201,168,76,0.04); }
-
-.answer-input.shake { animation: shake 0.4s ease; border-color: var(--red) !important; box-shadow: none !important; }
+.answer-input::placeholder { color: var(--ink-faint); font-size: 12px; letter-spacing: 0.18em; }
+.answer-input:focus { border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold-dim); }
+.answer-input.shake { animation: shake 0.4s ease; border-color: var(--red) !important; }
 .answer-input.correct { border-color: #4a7c59 !important; color: #8bc4a0; }
 
 @keyframes shake {
@@ -288,12 +266,12 @@ main {
 
 .error-msg {
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.1em;
   color: var(--red);
   text-align: center;
   margin-top: 6px;
-  min-height: 16px;
+  min-height: 18px;
   opacity: 0;
   transition: opacity 0.2s;
 }
@@ -306,10 +284,10 @@ main {
   border: 1px solid var(--gold-dim);
   color: var(--gold);
   font-family: 'Cinzel', serif;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  padding: 13px;
+  padding: 14px;
   cursor: pointer;
   transition: all 0.2s;
   border-radius: 1px;
@@ -321,7 +299,7 @@ main {
 
 .hint-toggle {
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.14em;
   color: var(--ink-faint);
   text-transform: uppercase;
@@ -332,7 +310,6 @@ main {
   transition: color 0.2s;
   text-decoration: underline;
   text-underline-offset: 3px;
-  text-decoration-color: var(--ink-faint);
 }
 .hint-toggle:hover { color: var(--ink-dim); }
 
@@ -347,9 +324,9 @@ main {
 .hint-box.open { display: block; }
 
 .hint-box p {
-  font-size: 15px;
+  font-size: 18px;
   color: var(--ink-dim);
-  line-height: 1.65;
+  line-height: 1.68;
   font-style: italic;
   margin-bottom: 10px;
 }
@@ -357,7 +334,7 @@ main {
 
 .extra-hint-toggle {
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.1em;
   color: var(--ink-faint);
   text-transform: uppercase;
@@ -367,7 +344,6 @@ main {
   padding: 3px 0;
   text-decoration: underline;
   text-underline-offset: 3px;
-  transition: color 0.2s;
   display: block;
   margin-top: 6px;
 }
@@ -378,15 +354,14 @@ main {
   margin-top: 8px;
   padding-top: 8px;
   border-top: 1px solid var(--border);
-  font-size: 14px;
+  font-size: 15px;
   color: var(--gold-dim);
-  font-style: normal;
   font-family: 'Cinzel', serif;
   letter-spacing: 0.05em;
 }
 .extra-hint-text.open { display: block; }
 
-/* NEXT BUTTON (info pages) */
+/* NEXT / BACK BUTTONS */
 .next-btn {
   display: block;
   margin: 20px 20px 8px;
@@ -394,7 +369,7 @@ main {
   border: 1px solid var(--gold-dim);
   color: var(--gold);
   font-family: 'Cinzel', serif;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   padding: 15px;
@@ -402,6 +377,7 @@ main {
   text-align: center;
   text-decoration: none;
   transition: all 0.2s;
+  border-radius: 1px;
 }
 .next-btn:hover { border-color: var(--gold); background: rgba(201,168,76,0.05); }
 
@@ -412,24 +388,22 @@ main {
   flex-direction: column;
   gap: 12px;
 }
-
 .branch-label {
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.28em;
   color: var(--ink-faint);
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 4px;
 }
-
 .branch-btn {
   display: block;
   width: 100%;
   padding: 16px;
   text-align: center;
   font-family: 'Cinzel', serif;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   cursor: pointer;
@@ -438,50 +412,26 @@ main {
   text-decoration: none;
   transition: all 0.2s;
 }
-
-.branch-btn.light {
-  color: var(--gold);
-  border-color: var(--gold-dim);
-}
+.branch-btn.light { color: var(--gold); border-color: var(--gold-dim); }
 .branch-btn.light:hover { background: rgba(201,168,76,0.06); border-color: var(--gold); }
-
-.branch-btn.dark {
-  color: #c07070;
-  border-color: #6b2020;
-}
+.branch-btn.dark { color: #c07070; border-color: #6b2020; }
 .branch-btn.dark:hover { background: rgba(139,32,32,0.08); border-color: #8b2020; }
 
 /* FINAL PAGE */
-.final-text {
-  padding: 20px 20px 32px;
-}
+.final-text { padding: 20px 20px 32px; }
 .final-text p {
-  font-size: 17px;
-  line-height: 1.78;
+  font-size: 19px;
+  line-height: 1.82;
   color: var(--ink);
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
-
-.answer-blank {
-  display: inline-block;
-  border-bottom: 2px solid var(--gold-dim);
-  min-width: 120px;
-  margin: 0 4px;
-  vertical-align: bottom;
-  height: 1.1em;
-}
-
-.clue-text .answer-blank {
-  border-bottom-color: var(--gold);
-  min-width: 140px;
-}
-.final-text .penrose-link {
+.penrose-link {
   display: block;
   margin-top: 20px;
-  padding: 15px;
+  padding: 16px;
   text-align: center;
   font-family: 'Cinzel', serif;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
