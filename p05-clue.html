@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Egyptian Art — The 30th Degree</title>
+<title>The Temple of Dendur — The 30th Degree</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,29 +15,22 @@
   </a>
 </header>
 <main>
-  <div class="page-label">Stop 5 · Clue</div>
+  <div class="page-label">Stop 4 · Initiation</div>
   <div class="divider"><div class="divider-line"></div><div class="divider-symbol">✦</div><div class="divider-line"></div></div>
-  <div class="section-title">Egyptian Art</div>
-  <div class="section-subtitle">Gallery 131 · Ground Floor</div>
+  <div class="section-title">The Temple of Dendur</div>
+  <div class="section-subtitle">Egyptian Art · Gallery 131 · Ground Floor</div>
   <div class="divider"><div class="divider-line"></div><div class="divider-symbol">◈</div><div class="divider-line"></div></div>
-  <div class="content">
-<img src="images/dendur.jpg" class="content-image" alt="" onerror="this.style.display='none'">
-</div>
+  <div class="content"></div>
   <div class="clue-section">
   <div class="clue-label">Your Clue</div>
-  <p class="clue-text">This ancient structure is the <span class="answer-blank"></span> of Dendur. This entire exhibit is designed after Solomon's <span class="answer-blank"></span>. Solomon was the 3rd and final king of Israel, who constructed a <span class="answer-blank"></span> in Jerusalem in roughly 960 BC.</p>
+  <p class="clue-text">This ancient structure is the <span class="answer-blank"></span> of Dendur. This entire exhibit is designed after Solomon's <span class="answer-blank"></span>. Solomon was the 3rd and final king of Israel, who constructed a <span class="answer-blank"></span> in Jerusalem in roughly 960 BC. <img src="images/dendur.jpg" class="content-image" alt="" onerror="this.style.display='none'"></p>
   <div class="answer-label">Enter the answer to proceed</div>
-  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer"
-    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
   <div class="error-msg" id="errorMsg"></div>
-  <button class="submit-btn" onclick="checkAnswer(['temple', 'Temple'], 'p06-a')">Submit</button>
-  <div class="hint-area">
-      <button class="hint-toggle" onclick="toggleHint()">Need a hint?</button>
-      <div class="hint-box" id="hintBox"><p><img src="images/temple.jpg" class="content-image" alt="" onerror="this.style.display='none'"></p><button class="extra-hint-toggle" onclick="toggleExtraHint()">Extra Hint →</button><div class="extra-hint-text" id="extraHint">Check your map, you are in the Temple of Dendur</div></div>
-    </div>
-</div>
-<a href="p05-b" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
-<script>bindEnter(['temple', 'Temple'], 'p06-a');</script>
+  <button class="submit-btn" onclick="checkAnswer(['temple', 'Temple'], 'p06-a.html')">Submit</button>
+  <div class="hint-area"><button class="hint-toggle" onclick="toggleHint()">Need a hint?</button><div class="hint-box" id="hintBox"><p><img src="images/temple.jpg" class="content-image" alt="" onerror="this.style.display='none'"></p><button class="extra-hint-toggle" onclick="toggleExtraHint()">Extra Hint →</button><div class="extra-hint-text" id="extraHint">Check your map, you are in the Temple of Dendur</div></div></div>
+</div><a href="p05-c.html" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
+<script>bindEnter(['temple', 'Temple'], 'p06-a.html');</script>
 </main>
 <script src="hunt.js"></script>
 </body>

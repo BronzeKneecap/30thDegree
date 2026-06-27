@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Everything #4 — The 30th Degree</title>
+<title>The Cross — The 30th Degree</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,27 +15,22 @@
   </a>
 </header>
 <main>
-  <div class="page-label">Stop 14 · Clue</div>
+  <div class="page-label">Stop 13 · Medieval Art</div>
   <div class="divider"><div class="divider-line"></div><div class="divider-symbol">✦</div><div class="divider-line"></div></div>
-  <div class="section-title">Everything #4</div>
-  <div class="section-subtitle">Gallery 302 · Ground Floor</div>
+  <div class="section-title">The Cross</div>
+  <div class="section-subtitle">Gallery 304 · Ground Floor</div>
   <div class="divider"><div class="divider-line"></div><div class="divider-symbol">◈</div><div class="divider-line"></div></div>
   <div class="content"></div>
   <div class="clue-section">
   <div class="clue-label">Your Clue</div>
-  <p class="clue-text">This room is filled with artifacts dating thousands of years, but there is a piece of modern art, seemingly out of place. The mirror on the wall gives you a message from those in power — "Everything will be <span class="answer-blank"></span> <span class="answer-blank"></span>."</p>
+  <p class="clue-text">The mirror on the wall gives you a message from those in power — "Everything will be <span class="answer-blank"></span> <span class="answer-blank"></span>."</p>
   <div class="answer-label">Enter the answer to proceed</div>
-  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer"
-    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
   <div class="error-msg" id="errorMsg"></div>
-  <button class="submit-btn" onclick="checkAnswer(['taken away', 'taken-away'], 'p15-a')">Submit</button>
-  <div class="hint-area">
-      <button class="hint-toggle" onclick="toggleHint()">Need a hint?</button>
-      <div class="hint-box" id="hintBox"><p>Look for section 302 on your map.</p><button class="extra-hint-toggle" onclick="toggleExtraHint()">Extra Hint →</button><div class="extra-hint-text" id="extraHint">Find the mirror in the brick room below the staircase.</div></div>
-    </div>
-</div>
-<a href="p14-d" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
-<script>bindEnter(['taken away', 'taken-away'], 'p15-a');</script>
+  <button class="submit-btn" onclick="checkAnswer(['taken away', 'taken-away'], 'p15-a.html')">Submit</button>
+  <div class="hint-area"><button class="hint-toggle" onclick="toggleHint()">Need a hint?</button><div class="hint-box" id="hintBox"><p>Look for section 302 on your map.</p><button class="extra-hint-toggle" onclick="toggleExtraHint()">Extra Hint →</button><div class="extra-hint-text" id="extraHint">Find the mirror in the brick room below the staircase.</div></div></div>
+</div><a href="p14-d.html" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
+<script>bindEnter(['taken away', 'taken-away'], 'p15-a.html');</script>
 </main>
 <script src="hunt.js"></script>
 </body>

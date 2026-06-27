@@ -400,22 +400,34 @@ main {
 .branch-btn {
   display: block;
   width: 100%;
-  padding: 16px;
+  padding: 22px 20px;
   text-align: center;
   font-family: 'Cinzel', serif;
-  font-size: 12px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
   cursor: pointer;
-  border: 1px solid;
+  border: 2px solid;
   background: transparent;
   text-decoration: none;
   transition: all 0.2s;
 }
+.branch-btn-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.branch-btn-sub {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  font-style: italic;
+  opacity: 0.85;
+}
 .branch-btn.light { color: var(--gold); border-color: var(--gold-dim); }
-.branch-btn.light:hover { background: rgba(201,168,76,0.06); border-color: var(--gold); }
+.branch-btn.light:hover { background: rgba(201,168,76,0.08); border-color: var(--gold); }
 .branch-btn.dark { color: #c07070; border-color: #6b2020; }
-.branch-btn.dark:hover { background: rgba(139,32,32,0.08); border-color: #8b2020; }
+.branch-btn.dark:hover { background: rgba(139,32,32,0.1); border-color: #8b2020; }
 
 /* FINAL PAGE */
 .final-text { padding: 20px 20px 32px; }

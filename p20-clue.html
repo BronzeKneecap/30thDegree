@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>The Martyr — The 30th Degree</title>
+<title>The Sculpture Courtyard — The 30th Degree</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,24 +15,22 @@
   </a>
 </header>
 <main>
-  <div class="page-label">Deeper Path · Clue</div>
+  <div class="page-label">Deeper Path · The Courtyard</div>
   <div class="divider"><div class="divider-line"></div><div class="divider-symbol">✦</div><div class="divider-line"></div></div>
-  <div class="section-title">The Martyr</div>
-  <div class="section-subtitle">Gallery 548 · Ground Floor</div>
+  <div class="section-title">The Sculpture Courtyard</div>
+  <div class="section-subtitle">European Sculpture · Gallery 548 · Ground Floor</div>
   <div class="divider"><div class="divider-line"></div><div class="divider-symbol">◈</div><div class="divider-line"></div></div>
   <div class="content"></div>
   <div class="clue-section">
   <div class="clue-label">Your Clue</div>
   <p class="clue-text">The curators give you a little hint of insight in this object's description: "Splayed upon an <span class="answer-blank"></span>-shaped pedestal, she becomes a symbolic martyr…"</p>
   <div class="answer-label">Enter the answer to proceed</div>
-  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer"
-    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
   <div class="error-msg" id="errorMsg"></div>
-  <button class="submit-btn" onclick="checkAnswer(['altar', 'Altar'], 'p21-a')">Submit</button>
-  
-</div>
-<a href="p20-c" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
-<script>bindEnter(['altar', 'Altar'], 'p21-a');</script>
+  <button class="submit-btn" onclick="checkAnswer(['altar', 'Altar'], 'p21-a.html')">Submit</button>
+  <div class="hint-area"><button class="hint-toggle" onclick="toggleHint()">Need a hint?</button><div class="hint-box" id="hintBox"><p>Section 548.</p><button class="extra-hint-toggle" onclick="toggleExtraHint()">Extra Hint →</button><div class="extra-hint-text" id="extraHint">Read the description.</div></div></div>
+</div><a href="p20-c.html" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
+<script>bindEnter(['altar', 'Altar'], 'p21-a.html');</script>
 </main>
 <script src="hunt.js"></script>
 </body>

@@ -15,7 +15,7 @@
   </a>
 </header>
 <main>
-  <div class="page-label">Stop 2 · Clue</div>
+  <div class="page-label">Stop 2 · Egyptian Art</div>
   <div class="divider"><div class="divider-line"></div><div class="divider-symbol">✦</div><div class="divider-line"></div></div>
   <div class="section-title">The Recumbent Lion</div>
   <div class="section-subtitle">Egyptian Art · Gallery 100 · Ground Floor</div>
@@ -25,17 +25,12 @@
   <div class="clue-label">Your Clue</div>
   <p class="clue-text">Follow in the direction of the gaze of the lion. Find the life-size Goddess Sakhmet seated. She wears the head of a lion. She and her twin line a doorway. What is the name of the object she is holding in her left hand? <span class="answer-blank"></span></p>
   <div class="answer-label">Enter the answer to proceed</div>
-  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer"
-    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
   <div class="error-msg" id="errorMsg"></div>
-  <button class="submit-btn" onclick="checkAnswer(['ankh', 'Ankh'], 'p04-a')">Submit</button>
-  <div class="hint-area">
-      <button class="hint-toggle" onclick="toggleHint()">Need a hint?</button>
-      <div class="hint-box" id="hintBox"><p><img src="images/sakhmet.jpg" class="content-image" alt="" onerror="this.style.display='none'"></p><button class="extra-hint-toggle" onclick="toggleExtraHint()">Extra Hint →</button><div class="extra-hint-text" id="extraHint"><img src="images/ankh.jpg" class="content-image" alt="" onerror="this.style.display='none'"></div></div>
-    </div>
-</div>
-<a href="p03-c" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
-<script>bindEnter(['ankh', 'Ankh'], 'p04-a');</script>
+  <button class="submit-btn" onclick="checkAnswer(['ankh', 'Ankh'], 'p04-a.html')">Submit</button>
+  <div class="hint-area"><button class="hint-toggle" onclick="toggleHint()">Need a hint?</button><div class="hint-box" id="hintBox"><p><img src="images/sakhmet.jpg" class="content-image" alt="" onerror="this.style.display='none'"></p><button class="extra-hint-toggle" onclick="toggleExtraHint()">Extra Hint →</button><div class="extra-hint-text" id="extraHint"><img src="images/ankh.jpg" class="content-image" alt="" onerror="this.style.display='none'"></div></div></div>
+</div><a href="p03-c.html" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
+<script>bindEnter(['ankh', 'Ankh'], 'p04-a.html');</script>
 </main>
 <script src="hunt.js"></script>
 </body>

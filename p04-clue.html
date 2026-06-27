@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>The Sarcophagus — The 30th Degree</title>
+<title>The Goddess Sakhmet — The 30th Degree</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,27 +15,22 @@
   </a>
 </header>
 <main>
-  <div class="page-label">Stop 4 · Clue</div>
+  <div class="page-label">Stop 3 · Egyptian Art</div>
   <div class="divider"><div class="divider-line"></div><div class="divider-symbol">✦</div><div class="divider-line"></div></div>
-  <div class="section-title">The Sarcophagus</div>
-  <div class="section-subtitle">Egyptian Art · Ground Floor</div>
+  <div class="section-title">The Goddess Sakhmet</div>
+  <div class="section-subtitle">Egyptian Art · Gallery 135 · Ground Floor</div>
   <div class="divider"><div class="divider-line"></div><div class="divider-symbol">◈</div><div class="divider-line"></div></div>
   <div class="content"></div>
   <div class="clue-section">
   <div class="clue-label">Your Clue</div>
   <p class="clue-text">Along the lid of the sarcophagus is a repeating symbol of a dog, the shepherd which guides the soul to the afterlife. While the ankh represents life, Anubis is the god of <span class="answer-blank"></span>. He would weigh the soul against a feather of truth to determine if the dead was worthy of an afterlife.</p>
   <div class="answer-label">Enter the answer to proceed</div>
-  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer"
-    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
   <div class="error-msg" id="errorMsg"></div>
-  <button class="submit-btn" onclick="checkAnswer(['death', 'Death'], 'p05-a')">Submit</button>
-  <div class="hint-area">
-      <button class="hint-toggle" onclick="toggleHint()">Need a hint?</button>
-      <div class="hint-box" id="hintBox"><p>Opposite of life.</p><button class="extra-hint-toggle" onclick="toggleExtraHint()">Extra Hint →</button><div class="extra-hint-text" id="extraHint">_ E A T H</div></div>
-    </div>
-</div>
-<a href="p04-c" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
-<script>bindEnter(['death', 'Death'], 'p05-a');</script>
+  <button class="submit-btn" onclick="checkAnswer(['death', 'Death'], 'p05-a.html')">Submit</button>
+  <div class="hint-area"><button class="hint-toggle" onclick="toggleHint()">Need a hint?</button><div class="hint-box" id="hintBox"><p>Section 132</p><button class="extra-hint-toggle" onclick="toggleExtraHint()">Extra Hint →</button><div class="extra-hint-text" id="extraHint">Opposite of life, Anubis represents ____.</div></div></div>
+</div><a href="p04-c.html" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
+<script>bindEnter(['death', 'Death'], 'p05-a.html');</script>
 </main>
 <script src="hunt.js"></script>
 </body>

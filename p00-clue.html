@@ -15,7 +15,7 @@
   </a>
 </header>
 <main>
-  <div class="page-label">Stop 0 · Clue</div>
+  <div class="page-label">Stop 0 · The Obelisk</div>
   <div class="divider"><div class="divider-line"></div><div class="divider-symbol">✦</div><div class="divider-line"></div></div>
   <div class="section-title">Cleopatra's Needle</div>
   <div class="section-subtitle">Central Park · East Side</div>
@@ -25,17 +25,12 @@
   <div class="clue-label">Your Clue</div>
   <p class="clue-text">The building we will explore is open to the public. It contains art and artifacts from across the world and across time. This building is only a short walk away from where we stand. What is the 3 letter name of this building? <span class="answer-blank"></span></p>
   <div class="answer-label">Enter the answer to proceed</div>
-  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer"
-    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+  <input type="text" class="answer-input" id="answerInput" placeholder="Type your answer" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
   <div class="error-msg" id="errorMsg"></div>
-  <button class="submit-btn" onclick="checkAnswer(['MET', 'met', 'Met'], 'p01-a')">Submit</button>
-  <div class="hint-area">
-      <button class="hint-toggle" onclick="toggleHint()">Need a hint?</button>
-      <div class="hint-box" id="hintBox"><p>Yes, it is a museum.</p><button class="extra-hint-toggle" onclick="toggleExtraHint()">Extra Hint →</button><div class="extra-hint-text" id="extraHint">The address is 1000 5th Ave, New York, NY 10028</div></div>
-    </div>
-</div>
-<a href="p00-c" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
-<script>bindEnter(['MET', 'met', 'Met'], 'p01-a');</script>
+  <button class="submit-btn" onclick="checkAnswer(['MET', 'met', 'Met'], 'p01-a.html')">Submit</button>
+  <div class="hint-area"><button class="hint-toggle" onclick="toggleHint()">Need a hint?</button><div class="hint-box" id="hintBox"><p>Yes, it is a museum.</p><button class="extra-hint-toggle" onclick="toggleExtraHint()">Extra Hint →</button><div class="extra-hint-text" id="extraHint">The address is 1000 5th Ave, New York, NY 10028</div></div></div>
+</div><a href="p00-c.html" class="next-btn" style="margin:0 20px 32px;display:block;text-align:center;">← Back</a>
+<script>bindEnter(['MET', 'met', 'Met'], 'p01-a.html');</script>
 </main>
 <script src="hunt.js"></script>
 </body>
